@@ -1,10 +1,15 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:pantry/routes/routes.dart';
 import 'constants/colors.dart';
 import 'constants/text_styles.dart';
+import 'firebase_options.dart';
 import 'routes/routes_names.dart';
 
-void main() {
+void main() async {
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
   runApp(
     const MyApp(),
   );
