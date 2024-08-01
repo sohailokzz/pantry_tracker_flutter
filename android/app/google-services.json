@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "191125930432",
+    "project_id": "pantry-tracker-flutter",
+    "storage_bucket": "pantry-tracker-flutter.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:191125930432:android:beb508b8276affccd88825",
+        "android_client_info": {
+          "package_name": "com.sohailokzz.pantry"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcF05UgecmOR3AqhSyA7RoUd8UFqQ8088"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
