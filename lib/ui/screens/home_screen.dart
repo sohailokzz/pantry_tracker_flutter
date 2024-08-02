@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pantry/constants/colors.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -7,10 +8,36 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Pantry Tracker'),
+        centerTitle: true,
+        toolbarHeight: 100,
+        backgroundColor: AppColors.primaryColor,
+        title: Text(
+          'Pantry Tracker',
+          style: Theme.of(context).textTheme.displayMedium!.copyWith(
+                color: Colors.white,
+              ),
+        ),
       ),
-      body: const Center(
-        child: Text('Pantry Tracker'),
+      body: Column(
+        children: [
+          Container(
+            height: 100,
+            decoration: const BoxDecoration(
+              gradient: LinearGradient(
+                begin: Alignment.topRight,
+                end: Alignment.bottomLeft,
+                stops: [
+                  0.2,
+                  0.5,
+                ],
+                colors: [
+                  AppColors.primaryColor,
+                  Colors.white,
+                ],
+              ),
+            ),
+          )
+        ],
       ),
     );
   }
